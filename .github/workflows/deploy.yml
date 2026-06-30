@@ -16,7 +16,8 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: testpass
           MYSQL_DATABASE: chatbot_test
-        ports: ['3306:3306']
+        ports:
+           - 3306:3306
         options: --health-cmd='mysqladmin ping' --health-interval=10s
     steps:
       - uses: actions/checkout@v4
