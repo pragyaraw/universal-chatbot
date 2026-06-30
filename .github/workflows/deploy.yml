@@ -10,7 +10,7 @@ jobs:
   test:
     name: Run Unit Tests
     runs-on: ubuntu-latest
-    services;
+    services:
       mysql:
         image: mysql:8.0
         env:
